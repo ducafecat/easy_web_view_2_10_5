@@ -6,6 +6,7 @@ repository: https://github.com/rodydavis/plugins
 maintainer: Rody Davis (@rodydavis)
 environment:
   sdk: ">=2.12.0 <3.0.0"
+publish_to: none
 
 dependencies:
   flutter:
@@ -18,7 +19,11 @@ dependencies:
   permission_handler: ^9.2.0
   url_launcher: ^6.0.12
   webview_flutter: ^3.0.2
-  webview_windows: ^0.2.0
+  # webview_windows: ^0.2.0
+  webview_windows:
+    git:
+      url: https://github.com/ducafecat/flutter-webview-windows
+      ref: master
 
 dev_dependencies:
   flutter_test:
